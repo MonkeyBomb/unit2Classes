@@ -21,6 +21,7 @@ public class CityscapeComponent extends JComponent
     
     // define the CityscapeComponent contructor and intiailize all instance variables
     // ...
+    private Building b1 = new Building(0,0);
     
     /**
      * This method is invoked by the Java Run-Time whenever the component needs to be redrawn.
@@ -31,12 +32,8 @@ public class CityscapeComponent extends JComponent
     {
        
         Graphics2D g2 = (Graphics2D) g;
-        Building build1 = new Building(0,0);
-        int x = getWidth() - 80;
-        int y = getHeight() - 30;
-        Building build2 = new Building(x,y);
-        build1.draw(g2);
-        build2.draw(g2);
+        b1.draw(g2);
+        
         // invoke the draw method on each object in your Cityscape
         // ...
         
