@@ -23,6 +23,8 @@ public class CityscapeComponent extends JComponent
     // ...
     private Building b1 = new Building(0,0);
     private Street s1 = new Street(0,0);
+    private Trees t1 = new Trees(0,0);
+    private Sun sws1 = new Sun(0,0);
     
     /**
      * This method is invoked by the Java Run-Time whenever the component needs to be redrawn.
@@ -35,7 +37,8 @@ public class CityscapeComponent extends JComponent
         Graphics2D g2 = (Graphics2D) g;
         b1.draw(g2);
         s1.draw(g2);
-        
+        t1.draw(g2);
+        sws1.draw(g2);
         // invoke the draw method on each object in your Cityscape
         // ...
         

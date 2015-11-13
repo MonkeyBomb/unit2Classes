@@ -46,11 +46,11 @@ public class Building
       g2.draw(roof2);
       
       // Garage
-      Rectangle bodyG = new Rectangle(xLeft - 250, yTop + 250,300,300);
+      //Rectangle bodyG = new Rectangle(xLeft - 250, yTop + 250,300,300);
       
       
       
-      g2.draw(bodyG);
+      //g2.draw(bodyG);
       
      
    }
